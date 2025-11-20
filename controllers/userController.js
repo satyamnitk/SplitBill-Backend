@@ -475,6 +475,8 @@ const groups = async (req, res) => {
 
 const addExpense = async (req, res) => {
   const { groupId, paidBy, total, splits } = req.body;
+  console.log(req.body);
+  
 
   try {
     const newExpense = await AddExpense.create({
