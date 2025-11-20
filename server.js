@@ -19,6 +19,8 @@ connectDatabase();
 
 app.use("/api/users", userRoutes);
 
+// both
+
 if(process.env.MODE == "development") {
   const PORT = process.env.PORT || 5000;
 
